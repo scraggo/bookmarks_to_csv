@@ -1,9 +1,13 @@
 # bookmarks_to_csv
 
-Goal
+node CLI tool to create a CSV file from exported bookmarks html file from Chrome or Firefox.
 
-- simply export bookmarks html file from Chrome or Firefox
-- translate to CSV for use in Google Sheets
+CSV columns:
+
+- `addDate`
+- `href`
+- `title`
+- `category` - folder name
 
 Caveats
 
@@ -13,9 +17,16 @@ Caveats
 
 `npm run build` to transpile the script.
 
+Required arguments:
+
+- `--input <path to bookmarks.html>`
+- `--output <filename including .csv>`
+
 ### From package root
 
-`node build/index --input <path to bookmarks.html> --output <filename including .csv>`
+`node build/index <arguments>`
+
+or `npm start -- <arguments>`
 
 ### From anywhere
 
