@@ -24,13 +24,17 @@ Required arguments:
 
 ### From package root
 
-`node build/index <arguments>`
+`node build <arguments>`
 
 or `npm start -- <arguments>`
 
 ### From anywhere
 
-coming soon
+```sh
+alias bkcsv="node ~/bookmarks_to_csv/build";
+
+bkcsv -i ~/Desktop/bookmarks210116.html -o bookmarks210116.csv
+```
 
 ### Developing
 
